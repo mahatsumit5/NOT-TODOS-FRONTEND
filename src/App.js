@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Col, Container, Row } from "react-bootstrap";
+import "./App.css";
+import { TaskForm } from "./components/TaskForm";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { TaskContainer } from "./components/TaskContainer";
 
 function App() {
+  // console.log(list);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Container>
+        <Row>
+          <Col className="mt-5 text-center fs-1 mb-2">Task Mgmt</Col>
+        </Row>
+        <TaskForm />
+        <TaskContainer />
+      </Container>
+      <ToastContainer />
     </div>
   );
 }
