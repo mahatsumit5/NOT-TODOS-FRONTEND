@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const api = "http://localhost:8000/api/v1/task";
+// const api = "http://localhost:8000/api/v1/task";
+const api = "/api/v1/task";
 
 export const postTask = async (taskObj) => {
   try {

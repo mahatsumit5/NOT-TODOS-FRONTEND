@@ -67,7 +67,7 @@ export const TaskContainer = () => {
                         handleOnSwitch({ _id: item._id, type: "bad" })
                       }
                     >
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </Button>
                   </td>
                 </tr>
@@ -98,7 +98,7 @@ export const TaskContainer = () => {
                         handleOnSwitch({ _id: item._id, type: "entry" })
                       }
                     >
-                      <i class="fa-solid fa-arrow-left"></i>
+                      <i className="fa-solid fa-arrow-left"></i>
                     </Button>
                   </td>
                 </tr>
